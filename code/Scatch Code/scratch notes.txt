@@ -1,0 +1,49 @@
+
+for x in range(len(description)):if(description[x] == 'FEDLOANSERVICING/STDNT'):
+            category[x] = 1
+        #Car payment
+        #Unnecessary if
+        #USAA Insurance
+        elif(description[x] == 'USAA.COM PAY EXT/P&CWALTER COLEM'):
+            category[x] = 3    #Rent 
+    elif(description == 'VENMO/PAYMENTWALTER COLEMAN' & amount == -668.75):
+        category = 4
+    #Phone
+    elif(description == 'TOM COLEMAN/BILL PAYMTCOLEMAN'):
+        category = 5
+    #Gas
+    elif(description == 'Citgo'):
+        category = 6
+    #Utilities
+    elif(description == 'WASHINGTON GAS/PAYMENTEvan' | description == 'DOM ENERGYVA/UTILITYWALTER'):
+        category = 7
+    #Tolls/Metro/Uber
+    elif(description == 'Uber'):
+        category = 8
+    #Dining Out
+    elif(description == 'Nazret'):
+        category = 9
+    #Groceries
+    elif(description == 'POS PURCHASE with PINGIANT 0774'):
+        category = 10
+    #Entertainment
+    elif(description == 'Movies'):
+        category = 11
+    #Tithe 
+    elif(description == 'Pillar DC/Pillar DCPILLAR'):
+        category = 12
+    #Medical
+    elif(description == 'Medical'):
+        category = 13
+    #401k
+    #Unnecessary as it is already calculated in
+    #Maintenance Service
+    elif(description == 'Maintenance Service Fee'):
+        category = 15
+    #Jiu Jitsu & Gym
+    elif(description == 'POS PURCHASE Non-PINDISTRICT' | description == 'POS PURCHASE Non-PINXSPORT'):
+        category = 16
+        
+        #Misc
+        else:
+            category[x] = 17
